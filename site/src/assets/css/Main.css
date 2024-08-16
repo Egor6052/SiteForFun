@@ -1,16 +1,16 @@
 html {
   top: 0;
   left: 0;
-  background-color: #68402d;
+  background: linear-gradient(to bottom, #804d33, #503122);
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 .Main .header {
   left: 0px;
-  top: 0px;
+  top: 10px;
   position: absolute;
   width: 100%;
   height: 50px;
-  background-color: #915a40;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@ html {
   padding: 0 20px;
 }
 .Main .header ul li {
-  padding-left: 10px;
+  padding-left: 0px;
   padding-right: 10px;
   list-style: none;
   display: flex;
@@ -32,33 +32,221 @@ html {
 .Main .header ul li .button-back {
   color: white;
   font-size: large;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 5px;
   padding-bottom: 5px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.Main .header ul li .button-back img {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  /* Інвертує всі кольори зображення */
 }
 .Main .header ul li .Text {
   color: white;
   font-size: large;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
 }
 .Main .header ul li .button-more {
   text-decoration: none;
-  color: white;
+}
+.Main .header ul li .button-more img {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  /* Інвертує всі кольори зображення */
+}
+.Main .content {
+  width: 350px;
+  height: 170px;
+}
+.Main .content .prise {
+  position: absolute;
+  width: 350px;
+  height: 170px;
+  background-color: #e9b629;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Main .content .prise .ticket {
+  margin-bottom: 50px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .content .prise .ticket img {
+  width: 100px;
+  height: 100px;
+  filter: brightness(1.2);
+  /* Підвищує яскравість зображення */
+}
+.Main .content .prise .baner ul {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+}
+.Main .content .prise .baner ul li {
+  margin-right: 0px;
+  padding-left: 0px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.Main .content .prise .baner ul li a {
+  text-decoration: none;
+}
+.Main .content .prise .baner ul li .buy-ticket {
+  background-color: #ec9018;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.Main .content .prise .baner ul li .buy-ticket p {
   font-size: large;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
+  text-decoration: none;
+}
+.Main .content .prise .baner ul li .plus-minus {
+  background-color: #ec9018;
+  border-radius: 10px;
+  height: 50px;
+  margin-left: -20px;
+  margin-right: 40px;
+  display: flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.Main .content .prise .baner ul li .plus-minus .plus {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.Main .content .prise .baner ul li .plus-minus .plus p {
+  font-size: large;
+}
+.Main .content .prise .baner ul li .plus-minus .minus {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.Main .content .prise .baner ul li .plus-minus .minus p {
+  font-size: large;
+}
+.Main .content .list {
+  position: absolute;
+  width: 350px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Main .content .list ul {
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  list-style: none;
+}
+.Main .content .list ul li {
+  padding-left: 0px;
+  padding-right: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #7a7a7a;
   padding-bottom: 5px;
+}
+.Main .content .list ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.Main .content .list ul li p {
+  color: aliceblue;
+}
+.Main .bar {
+  left: 0px;
+  right: 10px;
+  top: 90%;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main .bar ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fcd261;
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;
+}
+.Main .bar ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+.Main .bar ul li .button1 {
+  width: 40px;
+  height: 40px;
+  background-color: #db831e;
   border-radius: 100%;
-  background-color: transparent;
-  /* Прозорий фон */
-  border-color: aliceblue;
-  border: 1px solid aliceblue;
-  /* Контур навколо тексту */
+}
+.Main .bar ul li .button2 {
+  width: 40px;
+  height: 40px;
+  background-color: #db831e;
+  border-radius: 100%;
+}
+.Main .bar ul li .button3 {
+  width: 40px;
+  height: 40px;
+  background-color: #db831e;
+  border-radius: 100%;
+}
+.Main .bar ul li .button4 {
+  width: 40px;
+  height: 40px;
+  background-color: #db831e;
+  border-radius: 100%;
+}
+.Main .bar ul li .button5 {
+  width: 40px;
+  height: 40px;
+  background-color: #db831e;
+  border-radius: 100%;
 }

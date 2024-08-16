@@ -3,18 +3,20 @@
 html {
     top: 0;
     left: 0;
-    background-color: rgb(104, 64, 45);
+    background: linear-gradient(to bottom, rgb(128, 77, 51), rgb(80, 49, 34));
     scroll-behavior: smooth;
-  }
+    min-height: 100%;
+}
+
 
   .Main {
     .header {
         left: 0px;
-        top: 0px;
+        top: 10px;
         position: absolute;
         width: 100%;
         height: 50px;
-        background-color: rgb(145, 90, 64);
+        // background-color: rgb(145, 90, 64);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -27,7 +29,7 @@ html {
             padding: 0 20px;
 
             li {
-                padding-left: 10px;
+                padding-left: 0px;
                 padding-right: 10px;
                 list-style: none;
                 display: flex;
@@ -36,18 +38,28 @@ html {
                 .button-back {
                     color: white;
                     font-size: large;
-                    padding-left: 10px;
-                    padding-right: 10px;
+                    padding-left: 0px;
+                    padding-right: 0px;
                     padding-top: 5px;
                     padding-bottom: 5px;
                     text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    
+                    img {
+                        display: flex;
+                        align-items: center;
+                        width: 30px;
+                        height: 30px;
+                        filter: invert(1); /* Інвертує всі кольори зображення */
+                    }
                 }
 
                 .Text {
                     color: white;
                     font-size: large;
-                    padding-left: 10px;
-                    padding-right: 10px;
+                    padding-left: 0px;
+                    padding-right: 0px;
                     padding-top: 5px;
                     padding-bottom: 5px;
                     text-align: center;
@@ -55,18 +67,277 @@ html {
 
                 .button-more {
                     text-decoration: none;
-                    color: white;
-                    font-size: large;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    padding-top: 5px;
-                    padding-bottom: 5px;
-                    border-radius: 100%;
-                    background-color: transparent; /* Прозорий фон */
-                    border-color: aliceblue;
-                    border: 1px solid aliceblue; /* Контур навколо тексту */
+                    // color: white;
+                    // font-size: large;
+                    // padding-left: 5px;
+                    // padding-right: 5px;
+                    // padding-top: 5px;
+                    // padding-bottom: 5px;
+                    // background-color: aliceblue;
+                    // border-radius: 100%;
+                    img {
+                        display: flex;
+                        align-items: center;
+                        width: 30px;
+                        height: 30px;
+                        filter: invert(1); /* Інвертує всі кольори зображення */
+                    }
+                    
                 }
             }
+        }
+    }
+
+
+    .content {
+        // position: absolute;
+        width: 350px;
+        height: 170px;
+        // background-color: aqua;
+        
+        
+        .prise {
+            position: absolute;
+            width: 350px;
+            height: 170px;
+            background-color: rgb(233, 182, 41);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .ticket {
+                margin-bottom: 50px;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                img {
+                    width: 100px;
+                    height: 100px;
+                    filter: brightness(1.2); /* Підвищує яскравість зображення */
+                }
+            }
+            
+            
+
+
+
+
+
+            .baner {
+                ul {
+                    margin-top: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 100%;
+                    width: 100%;
+                    padding: 0 20px;
+
+                    li {
+                        margin-right: 0px;
+                        padding-left: 0px;
+                        // padding-right: 10px;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        
+                        a {
+                            text-decoration: none;
+                        }
+
+                        .buy-ticket {
+                            background-color: rgb(236, 144, 24);
+                            width: 200px;
+                            height: 50px;
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                        
+                            p {
+                                font-size: large;
+                                text-decoration: none;
+                            }
+                        } 
+                        // &:hover {
+                        //     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.0);
+                        // }
+                        
+                        .plus-minus {
+                            background-color: rgb(236, 144, 24);
+                            border-radius: 10px;
+                            height: 50px;
+
+                            margin-left: -20px;
+                            margin-right: 40px;
+                            display: flex;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+
+                            .plus {
+                                // padding: 10px;
+                                padding-left: 20px;
+                                padding-right: 20px;
+                                
+                                display: flex;
+                                align-items: center;
+                                
+                                p {
+                                    font-size: large;
+                                }
+                            }
+                            .minus {
+                                // padding: 10px;
+                                padding-left: 20px;
+
+                                padding-right: 20px;
+                                display: flex;
+                                align-items: center;
+                                
+                                p {
+                                    font-size: large;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .list {
+            position: absolute;
+            width: 350px;
+            height: 170px;
+            // background-color: rgb(185, 185, 185);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            ul {
+                justify-content: space-between;
+                height: 100%;
+                width: 100%;
+                padding: 0 20px;
+                list-style: none;
+            
+                li {
+                    padding-left: 0px;
+                    padding-right: 10px;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid rgb(122, 122, 122);
+                    padding-bottom: 5px;
+            
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+            
+                    p {
+                        color: aliceblue;
+                    }
+                }
+            }
+            
+
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .bar {
+        left: 0px;
+        right: 10px;
+        top: 90%;
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: antiquewhite;
+        
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            background-color: rgb(252, 210, 97);
+            width: 300px;
+            height: 70px;
+            border-radius: 10px;
+            li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin-left: -10px;
+                margin-right: 20px;
+                .button1 {
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgb(219, 131, 30);
+                    border-radius: 100%;
+                }
+                .button2 {
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgb(219, 131, 30);
+                    border-radius: 100%;
+                }
+                .button3 {
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgb(219, 131, 30);
+                    border-radius: 100%;
+                }
+                .button4 {
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgb(219, 131, 30);
+                    border-radius: 100%;
+                }
+                .button5 {
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgb(219, 131, 30);
+                    border-radius: 100%;
+                }
+            }
+
         }
     }
 }
